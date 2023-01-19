@@ -24,7 +24,7 @@ const getProducts = async () => {
 const renderProducts = (products) => {
   const row = document.querySelector(".row");
   row.innerHTML = "";
-
+  console.log(products);
   products.forEach((product) => {
     const { name, description, brand, imageUrl, price, _id } = product;
     row.innerHTML += `

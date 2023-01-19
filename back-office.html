@@ -51,7 +51,7 @@
     </nav>
     <div class="container d-flex justify-content-center align-items-center">
       <!-- name, description, price and time -->
-      <form class="w-75" onsubmit="submitProduct()">
+      <form class="w-75">
         <div class="form-group row">
           <label for="prodImg">Product image</label>
           <input type="url" required name="" id="prodImg" >
@@ -83,10 +83,10 @@
           <label for="prodPrice">Price</label>
           <input type="number" required id="prodPrice" />
         </div>
-        <button class="btn btn-primary">
+        <button class="btn btn-primary" onsubmit="submitProduct(); return false">
           Add product
         </button>
-        <button class="btn btn-success">
+        <button class="btn btn-success" onsubmit="editProduct(); return false">
           Edit product
         </button>
       </form>
