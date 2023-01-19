@@ -37,7 +37,7 @@ window.onload = async () => {
   }
 };
 
-const handleBackoffice = async (addProd) => {
+const handdleProducts = async (addProd) => {
   try {
     addProd.preventDefault();
     const prodToAdd = {
